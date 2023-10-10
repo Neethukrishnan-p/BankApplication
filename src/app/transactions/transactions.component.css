@@ -1,0 +1,27 @@
+table{
+    color: rgb(255,255,255);
+    border: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    border-style: solid;
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+}
+  
+/* Style table header (optional) */
+th {
+background-color: #141414;
+font-weight: bold;
+text-align: center;
+padding: 8px;
+}
+
+/* Style table cells */
+td {
+border: 1px solid #0e0d0d;
+text-align: center;
+padding: 8px;
+}

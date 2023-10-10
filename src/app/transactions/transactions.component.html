@@ -1,0 +1,28 @@
+<nav class="navbar navbar-light bg-dark " >
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237) ;margin-left: 20px;"><b>&#169; HAFC Bank Pvt.Ltd </b></a>
+    <a style="color: blue;margin-left: 60%;" routerLink="/dashboard">Home</a>
+    <span class="quote text-light">Giving you freedom...</span>
+  </nav>
+  <h1 style="text-align: center; color: white;">Transaction History</h1>
+
+  <table *ngIf="transactions.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">Amount</th>
+        <th scope="col">Type</th>
+        <th scope="col">Date_Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let trans of transactions">
+        <td>{{ trans.amount }}</td>
+        <td>{{ trans.type }}</td>
+        <td>{{ trans.date_time | date: 'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="transactions.length === 0" style="text-align: center; color: whitesmoke;">No transactions available.</div>
+  
+  
+  
