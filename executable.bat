@@ -1,8 +1,5 @@
 @echo off
 
-REM Set the working directory to where start-server.bat is located
-cd "C:\Users\neethukrishnan\BankApplication"
-
 
 REM Install Node.js
 npm install -g serve
